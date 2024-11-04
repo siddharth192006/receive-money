@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexForge UPI Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="logo.png" alt="NexForge Logo">
+        <h1>Send Payment</h1>
+        <div class="form-group">
+            <label for="upi">Your UPI ID:</label>
+            <input type="text" id="upi" placeholder="Enter your UPI ID">
+            <div class="error-message" id="upi-error">Please enter a valid UPI ID.</div>
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount (₹):</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <div class="error-message" id="amount-error">Please enter a valid amount.</div>
+        </div>
+        <button class="btn" onclick="sendPaymentRequest()">Send Payment Request</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
